@@ -6,6 +6,8 @@ const chucky = require("../../assets/images/chucky/chucky.jpg");
 const img1 = require("../../assets/images/chucky/img1.jpg");
 const img2 = require("../../assets/images/chucky/img2.jpg");
 const img3 = require("../../assets/images/chucky/img3.jpg");
+const img4 = require("../../assets/images/chucky/img4.jpg");
+const img5 = require("../../assets/images/chucky/img5.jpg");
 
 const Container = styled.section`
   position: relative;
@@ -61,6 +63,11 @@ const DescriptionSection = styled.section`
   color: #ffffff;
 `;
 
+const AboutSection = styled.section`
+  padding: 40px 16px;
+  color: #ffffff;
+`;
+
 const PhotoSection = styled.section`
   padding: 40px 16px;
   color: #ffffff;
@@ -107,10 +114,21 @@ const Item = styled.li`
   margin: 10px 0;
 `;
 
+const TextItem = styled.li`
+  font-size: 18px;
+  margin-bottom: 24px;
+`;
+
 const Image = styled.img`
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
+`;
+
+const StrongText = styled.p`
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: bold;
 `;
 
 export const Chucky = () => {
@@ -136,6 +154,33 @@ export const Chucky = () => {
           </Text>
         </DescriptionSection>
 
+        <AboutSection>
+          <Heading>About CHUCKY!!!</Heading>
+          <Text>
+            ネオンに照らされて走り抜ける、不良ロカビリー魂。
+            サイコな笑いと狂ったビートで、この街をぶっ壊す！
+          </Text>
+
+          <List>
+            <TextItem>
+              <StrongText>好きな音楽：</StrongText> Psychobilly, Rockabilly,
+              Punk
+            </TextItem>
+            <TextItem>
+              <StrongText>好きなもの：</StrongText>
+              ネオンの街、ホラー映画、カスタムカー
+            </TextItem>
+            <TextItem>
+              <StrongText>性格：</StrongText> 不良っぽいけどユーモア大好き /
+              夜行性
+            </TextItem>
+            <TextItem>
+              <StrongText>モットー：</StrongText>
+              「まともじゃつまらない、狂ってこそロック」
+            </TextItem>
+          </List>
+        </AboutSection>
+
         <PhotoSection>
           <Heading>Psycho Gallery!!!</Heading>
           <List>
@@ -147,6 +192,12 @@ export const Chucky = () => {
             </Item>
             <Item>
               <Image src={img3} alt="" />
+            </Item>
+            <Item>
+              <Image src={img4} alt="" />
+            </Item>
+            <Item>
+              <Image src={img5} alt="" />
             </Item>
           </List>
         </PhotoSection>
