@@ -89,6 +89,7 @@ const Heading = styled.h2`
   color: #00ff7f;
   animation: ${neonFlicker} 1.2s infinite;
   animation-timing-function: steps(2, end);
+  text-align: center;
 `;
 
 const Text = styled.p`
@@ -122,23 +123,21 @@ export const Chucky = () => {
           <Overlay />
 
           <TextBlock>
-            <MainText>ROCKABILLY</MainText>
+            <MainText>PSYCHOBILLY</MainText>
             <MainText>NIGHT!!!!</MainText>
           </TextBlock>
         </MvSection>
 
         <DescriptionSection>
-          <Heading>俺の名は「chucky」だ！</Heading>
+          <Heading>My Name is CHUCKY!!!</Heading>
           <Text>
-            ちょっと危険？いや、カッコいいだけさ。
-            このネオンの光に負けないくらい、俺も輝いている。
+            ネオンがチカチカするこの街で、俺のビートは止まらない。
+            サイコビリーのリズムで夜をぶっ壊す、それがCHUCKYだ！
           </Text>
         </DescriptionSection>
 
         <PhotoSection>
-          <Heading>俺のギャラリーを紹介する！！</Heading>
-          <Text>俺のギャラリーを紹介しよう。</Text>
-
+          <Heading>Psycho Gallery!!!</Heading>
           <List>
             <Item>
               <Image src={img1} alt="" />
