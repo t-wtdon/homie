@@ -9,7 +9,6 @@ const images = [
   require("../../assets/images/chucky/img2.jpg"),
   require("../../assets/images/chucky/img3.jpg"),
   require("../../assets/images/chucky/img4.jpg"),
-  require("../../assets/images/chucky/img5.jpg"),
 ];
 
 const Container = styled.section`
@@ -169,20 +168,8 @@ export const Chucky = () => {
 
           <List>
             <TextItem>
-              <StrongText>好きな音楽：</StrongText> Psychobilly, Rockabilly,
+              <StrongText>favorite Music：</StrongText> Psychobilly, Rockabilly,
               Punk
-            </TextItem>
-            <TextItem>
-              <StrongText>好きなもの：</StrongText>
-              ネオンの街、ホラー映画、カスタムカー
-            </TextItem>
-            <TextItem>
-              <StrongText>性格：</StrongText> 不良っぽいけどユーモア大好き /
-              夜行性
-            </TextItem>
-            <TextItem>
-              <StrongText>モットー：</StrongText>
-              「まともじゃつまらない、狂ってこそロック」
             </TextItem>
           </List>
         </AboutSection>
