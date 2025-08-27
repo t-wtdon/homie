@@ -147,18 +147,18 @@ export const Chucky = () => {
         </MvSection>
 
         <DescriptionSection>
-          <Heading>My Name is CHUCKY!!!</Heading>
+          <Heading>I'm PSYCHO!!!</Heading>
           <Text>
-            ネオンがチカチカするこの街で、俺のビートは止まらない。
-            サイコビリーのリズムで夜をぶっ壊す、それがCHUCKYだ！
+            PSYCHO is more than a name — it’s a statement of fearless creativity
+            and timeless style.
           </Text>
         </DescriptionSection>
 
         <AboutSection>
-          <Heading>About CHUCKY!!!</Heading>
+          <Heading>About PSYCHO!!!</Heading>
           <Text>
-            ネオンに照らされて走り抜ける、不良ロカビリー魂。
-            サイコな笑いと狂ったビートで、この街をぶっ壊す！
+            家族を守るために働き、 その傍らで自分の“好き”を追いかけ続ける。
+            真面目さと遊び心、その両方を抱えて生きる男。 それが、PSYCHOだ。
           </Text>
 
           <List>
@@ -182,7 +182,7 @@ export const Chucky = () => {
         </AboutSection>
 
         <PhotoSection>
-          <Heading>Psycho Gallery!!!</Heading>
+          <Heading>PSYCHO Gallery!!!</Heading>
           <List>
             <Item>
               <Image src={img1} alt="" />
