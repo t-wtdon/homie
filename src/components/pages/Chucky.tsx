@@ -49,9 +49,9 @@ const MainText = styled.p`
   display: inline-block;
   font-family: "Rampart One", sans-serif;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 30px;
   background: #000;
-  padding: 10px 40px;
+  padding: 6px 40px;
   margin: 0 0 20px;
   border: 2px solid #fff;
 `;
