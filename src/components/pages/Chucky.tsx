@@ -3,11 +3,14 @@ import styled, { keyframes } from "styled-components";
 import { ScrollToTop } from "../common/ScrollToTop";
 
 const chucky = require("../../assets/images/chucky/chucky.jpg");
-const img1 = require("../../assets/images/chucky/img1.jpg");
-const img2 = require("../../assets/images/chucky/img2.jpg");
-const img3 = require("../../assets/images/chucky/img3.jpg");
-const img4 = require("../../assets/images/chucky/img4.jpg");
-const img5 = require("../../assets/images/chucky/img5.jpg");
+const aboutChucky = require("../../assets/images/chucky/about.jpg");
+const images = [
+  require("../../assets/images/chucky/img1.jpg"),
+  require("../../assets/images/chucky/img2.jpg"),
+  require("../../assets/images/chucky/img3.jpg"),
+  require("../../assets/images/chucky/img4.jpg"),
+  require("../../assets/images/chucky/img5.jpg"),
+];
 
 const Container = styled.section`
   position: relative;
@@ -156,9 +159,12 @@ export const Chucky = () => {
 
         <AboutSection>
           <Heading>About PSYCHO!!!</Heading>
+
+          <Image src={aboutChucky} alt="" />
+
           <Text>
-            家族を守るために働き、 その傍らで自分の“好き”を追いかけ続ける。
-            真面目さと遊び心、その両方を抱えて生きる男。 それが、PSYCHOだ。
+            Wandering through a mad world, PSYCHO lives where the edge meets the
+            extraordinary.
           </Text>
 
           <List>
@@ -183,22 +189,20 @@ export const Chucky = () => {
 
         <PhotoSection>
           <Heading>PSYCHO Gallery!!!</Heading>
+
+          <Text>
+            Discover the collection — each piece a reflection of PSYCHO’s unique
+            perspective.
+          </Text>
+
           <List>
-            <Item>
-              <Image src={img1} alt="" />
-            </Item>
-            <Item>
-              <Image src={img2} alt="" />
-            </Item>
-            <Item>
-              <Image src={img3} alt="" />
-            </Item>
-            <Item>
-              <Image src={img4} alt="" />
-            </Item>
-            <Item>
-              <Image src={img5} alt="" />
-            </Item>
+            {images.map((img, i) => {
+              return (
+                <Item key={i}>
+                  <Image src={img} alt="" />
+                </Item>
+              );
+            })}
           </List>
         </PhotoSection>
       </ContentInner>
